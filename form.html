@@ -254,7 +254,7 @@
         });
 
         async function fetchComplaints(category= '') {
-            const response = await fetch(`http://localhost:3000/complaint${category ? '?category=' + encodeURIComponent(category) : ''}`);
+            const response = await fetch(`https://complaint-form-backend.onrender.com/complaint${category ? '?category=' + encodeURIComponent(category) : ''}`);
             const complaints = await response.json();
             // You can update your UI to show the complaints here if needed.
         }
